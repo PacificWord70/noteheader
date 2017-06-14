@@ -2,6 +2,7 @@ import React from 'react'
 import quill from './quill.svg'
 import newHoverPNG from './new-hover.png'
 import newPNG from './new.png'
+import './Sidebar.css'
 
 const Sidebar = () => {
     return (
