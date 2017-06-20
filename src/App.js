@@ -26,6 +26,15 @@ class App extends Component {
     }
   }
 
+  saveNote(note){
+    if(!note.id){
+      note.id = `note-${Date.now()}`
+    }
+    const notes = {...this.state.notes}
+    notes[note.id] = note
+    this.setState({ notes })
+  }
+
   signedIn = () => {
   return this.state.uid
   } 
