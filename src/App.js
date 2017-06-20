@@ -14,7 +14,7 @@ class App extends Component {
     this.state = {
       notes: {},
       uid: null,
-      currentNoteID: null,
+      currentNoteId: null,
     }
   }
 
@@ -85,10 +85,16 @@ class App extends Component {
       removeNote: this.removeNote,
       setCurrentNoteId: this.setCurrentNoteId,
     }
+
+    const noteData = {
+      notes: this.state.notes,
+      currentNoteId: this.state.currentNoteId,
+    }
+
     return (
       <div>
         <SignOut signOut={this.signOut}/>
-        <Main notes={this.state.notes} {...actions}/>
+        <Main {...noteData} {...actions}/>
       </div>
     )
   }
