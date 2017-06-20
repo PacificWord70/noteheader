@@ -2,8 +2,11 @@ import React, {Component} from 'react'
 import './NoteForm.css'
 
 class NoteForm extends Component {
-    handleChanges(ev) {
-        console.log(ev.target.value)
+
+    handleChanges = (ev) => {
+        this.props.saveNote({
+            title: 'noteform component'
+        })
     }
 
     render(){

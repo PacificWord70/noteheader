@@ -26,7 +26,7 @@ class App extends Component {
     }
   }
 
-  saveNote(note){
+  saveNote = (note) => {
     if(!note.id){
       note.id = `note-${Date.now()}`
     }
@@ -51,7 +51,7 @@ class App extends Component {
     return (
       <div>
         <SignOut signOut={this.signOut}/>
-        <Main notes={this.state.notes}/>
+        <Main notes={this.state.notes} saveNote={this.saveNote}/>
       </div>
     )
   }
