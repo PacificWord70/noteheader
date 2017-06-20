@@ -12,7 +12,8 @@ class App extends Component {
     super()
 
     this.state = {
-      notes: {}
+      notes: {},
+      uid: null,
     }
   }
 
@@ -36,11 +37,11 @@ class App extends Component {
   }
 
   signedIn = () => {
-  return this.state.uid
+    return this.state.uid
   } 
 
   authHandler = (user) => {
-    this.setState({uid: user.id})
+    this.setState({uid: user.uid})
   }
 
   signOut = () => {
@@ -59,7 +60,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        { this.signedIn ? this.renderMain() : <SignIn authHandler={this.authHandler}/> }
+        { this.signedIn() ? this.renderMain() : <SignIn authHandler={this.authHandler}/> }
       </div>
     )
   }

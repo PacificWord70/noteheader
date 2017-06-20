@@ -3,7 +3,7 @@ import React from 'react'
 const SignOut = ({signOut}) => {
   return (
     <button
-        className='SignOut'
+        className="SignOut"
         onClick={signOut}
     >
         Sign Out
