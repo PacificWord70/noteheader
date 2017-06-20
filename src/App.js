@@ -48,6 +48,12 @@ class App extends Component {
     this.setState({ notes })
   }
 
+  removeNote = (note) => {
+    const notes = {...this.state.notes}
+    notes[note.id] = null
+    this.setState({notes})
+  }
+
   signedIn = () => {
     return this.state.uid
   } 
@@ -69,10 +75,14 @@ class App extends Component {
   }
 
   renderMain(){
+    const actions = {
+      saveNote: this.saveNote,
+      removeNote: this.removeNote,
+    }
     return (
       <div>
         <SignOut signOut={this.signOut}/>
-        <Main notes={this.state.notes} saveNote={this.saveNote}/>
+        <Main notes={this.state.notes} {...actions}/>
       </div>
     )
   }
