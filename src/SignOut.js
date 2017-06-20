@@ -3,9 +3,9 @@ import './SignOut.css'
 
 const SignOut = ({signOut}) => {
   return (
-    <div class="signOut">
+    <div className="SignOut">
       <button onClick={signOut}>
-          <i class="fa fa-sign-out">Sign Out</i>
+          <i className="fa fa-sign-out">Sign Out</i>
       </button>
     </div>
   )
