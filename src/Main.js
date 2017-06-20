@@ -6,16 +6,15 @@ import NoteForm from './NoteForm'
 
 import './Main.css'
 
-class Main extends Component {
-  render() {
-    return (
-      <div className="Main">
-        <Sidebar />
-        <NoteList />
-        <NoteForm />
-      </div>
-    );
-  }
+const Main = (props) => {
+  return (
+    <div className="Main">
+      <Sidebar />
+      <NoteList notes={props.notes}/>
+      <NoteForm />
+    </div>
+  );
+  
 }
 
 export default Main;
