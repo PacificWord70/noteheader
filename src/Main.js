@@ -9,8 +9,8 @@ import './Main.css'
 const Main = (props) => {
   return (
     <div className="Main">
-      <Sidebar />
-      <NoteList notes={props.notes} setCurrentNoteId={props.setCurrentNoteId}/>
+      <Sidebar resetCurrentNote={props.resetCurrentNote}/>
+      <NoteList notes={props.notes} setCurrentNote={props.setCurrentNote}/>
       <NoteForm {...props}/>
     </div>
   );
