@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import './App.css';
 import Main from './Main'
+import base from './base'
 import SignIn from './SignIn'
 import SignOut from './SignOut'
 
@@ -13,6 +14,16 @@ class App extends Component {
     this.state = {
       notes: {}
     }
+  }
+
+  componentWillMount() {
+    base.syncState(
+      'notes',
+      {
+        context: this,
+        state: 'notes',
+      }
+    )
   }
 
   saveNote = (note) => {

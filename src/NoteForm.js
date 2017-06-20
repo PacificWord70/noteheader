@@ -29,6 +29,10 @@ class NoteForm extends Component {
         this.setState({note: this.blankNote()})
     }
 
+    handleDelete = () => {
+        console.log('should delete')
+    }
+
     render(){
         return (
             <div className="NoteForm">
@@ -50,7 +54,8 @@ class NoteForm extends Component {
                             value={this.state.note.body}
                         ></textarea>
                     </p>
-                    <button type="submit"> Save and new </button>
+                    <button type="submit">Save and new</button>
+                    <button onClick={this.handleDelete}>Delete</button>
                 </form>
             </div>
         )
