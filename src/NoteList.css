@@ -4,6 +4,7 @@
   width: 30rem;
 }
 
+
 @media (max-width: 800px) {
   .NoteList {
     width: 20rem;

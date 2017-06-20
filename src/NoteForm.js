@@ -33,7 +33,10 @@ class NoteForm extends Component {
                             value={this.props.currentNote.body}
                         ></textarea>
                     </p>
-                    <button type="button" onClick={this.handleRemove}>
+                    <button
+                        type="button"
+                        onClick={this.handleRemove}
+                    >
                         <i className="fa fa-trash-o">Delete</i>
                     </button>
                 </form>

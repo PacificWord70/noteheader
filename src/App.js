@@ -4,7 +4,6 @@ import './App.css';
 import Main from './Main'
 import base, {auth} from './base'
 import SignIn from './SignIn'
-import SignOut from './SignOut'
 
 class App extends Component {
 
@@ -84,7 +83,10 @@ class App extends Component {
       .signOut()
       .then(() => {
         base.removeBinding(this.ref)
-        this.setState({notes: {}})
+        this.setState({
+          notes: {},
+          currentNote: this.blankNote()
+        })
       })
   }
 
@@ -98,6 +100,7 @@ class App extends Component {
       removeNote: this.removeNote,
       setCurrentNote: this.setCurrentNote,
       resetCurrentNote: this.resetCurrentNote,
+      signOut: this.signOut,
     }
 
     const noteData = {
@@ -106,10 +109,7 @@ class App extends Component {
     }
 
     return (
-      <div>
-        <SignOut signOut={this.signOut}/>
-        <Main {...noteData} {...actions}/>
-      </div>
+      <Main {...noteData} {...actions}/>
     )
   }
 

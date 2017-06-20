@@ -2,9 +2,11 @@ import React from 'react'
 import quill from './quill.svg'
 import newHoverPNG from './new-hover.png'
 import newPNG from './new.png'
+import SignOut from './SignOut'
+
 import './Sidebar.css'
 
-const Sidebar = ({ resetCurrentNote }) => {
+const Sidebar = ({ resetCurrentNote, signOut }) => {
     return (
         <nav className="Sidebar">
             <div className="logo">
@@ -14,6 +16,7 @@ const Sidebar = ({ resetCurrentNote }) => {
                 <img src={newHoverPNG} alt="New note" />
                 <img className="outline" src={newPNG} alt="New note" />
             </button>
+            <SignOut signOut={signOut}/>  
         </nav>
     )
 }
