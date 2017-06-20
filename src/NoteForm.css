@@ -13,6 +13,15 @@
   background: none;
   padding: 0;
 }
+
+.Noteform button[type="submit"] {
+  background-color: #0088f8;
+  border-radius: 4px;
+  color: white;
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
 .NoteForm button i.fa {
   color: #999;
   font-size: 2rem;

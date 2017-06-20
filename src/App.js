@@ -11,18 +11,7 @@ class App extends Component {
     super()
 
     this.state = {
-      notes: {
-        'note-1': {
-          id: 'note-1',
-          title: 'Thoughts on React',
-          body: 'React is cool'
-        },
-        'note-2': {
-          id: 'note-2',
-          title: 'Thoughts on JS',
-          body: 'Js is awesome'
-        },
-      },
+      notes: {}
     }
   }
 
