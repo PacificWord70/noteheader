@@ -55,7 +55,7 @@ class NoteForm extends Component {
            type="button"
            onClick={this.handleRemove}
           >
-            <i className="fa fa-trash-o"></i>
+            <i className="fa fa-trash-o">Delete</i>
           </button>
         </form>
       </div>
