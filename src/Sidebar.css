@@ -8,15 +8,18 @@
 .Sidebar .logo {
   font-family: "Fauna One";
   color: grey;
-  font-size: 3rem;
+  margin: 0rem;
+  margin-top: 1rem;
+  padding: 0rem;
+  font-size: 1rem;
 }
 .Sidebar .logo img {
-  width: 30px;
+  width: 40px;
   padding-left: 4px;
 }
 
 .Sidebar a.new-note {
-  margin-top: 2rem;
+  margin-top: 0rem;
   position: relative;
   width: 60%;
   color: grey;
