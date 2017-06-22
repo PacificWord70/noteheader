@@ -61,7 +61,7 @@ ul#notes a:first-of-type li .note {
   border-top: none;
 }
 ul#notes li:hover {
-  background-color: #008BF8;
+  background-color: peachpuff;
 }
 ul#notes li:hover,
 ul#notes li:hover .note * {

@@ -15,7 +15,7 @@
 }
 
 .NoteForm button[type="submit"] {
-  background-color: #0088f8;
+  background-color: grey;
   border-radius: 4px;
   color: white;
   font-size: 1.4rem;
@@ -36,7 +36,7 @@ input[name="title"] {
   border: none;
   font-size: 200%;
   font-family: "Fauna One";
-  color: #008BF8;
+  color: peachpuff;
   font-weight: 400;
   width: 100%;
 }
