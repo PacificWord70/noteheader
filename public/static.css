@@ -60,7 +60,7 @@ i.fa-trash-o {
 .Nav button {
   background-color: transparent;
   border: 0;
-  color: #008BF8;
+  color: grey;
   cursor: pointer;
   margin-top: 2rem;
   position: relative;
