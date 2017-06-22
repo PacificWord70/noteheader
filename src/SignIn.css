@@ -17,9 +17,23 @@
   margin-top: 2.5rem;
 }
 
+.SignIn:hover {
+      background-color: peachpuff !important;
+}
+
 #title{
   margin-bottom: 0rem;
   color: grey;
   font-weight: 550;
   font-size: 50px;
+}
+
+.logo {
+  font-family: "Fauna One";
+  color: grey;
+  font-size: 3rem;
+}
+ .logo img {
+  width: 45px;
+  padding-left: 4px;
 }

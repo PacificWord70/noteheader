@@ -1,6 +1,7 @@
 import React from 'react'
 
 import './SignIn.css'
+import quill from './quill.svg'
 import { auth, githubProvider, googleProvider } from './base'
 
 const SignIn = () => {
@@ -9,8 +10,11 @@ const SignIn = () => {
   }
 
   return (
-    <div id="sign-in-div">
-      <h1 id="title">Noteherder</h1>
+    <div className="">
+      <div className="logo">
+        
+      <h1 id="title"><img src={quill} alt="Noteherder" /> Noteherder</h1>
+      </div>
       <button
         className="SignIn"
         onClick={() => authenticate(githubProvider)}
