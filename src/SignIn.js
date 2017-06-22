@@ -9,7 +9,8 @@ const SignIn = () => {
   }
 
   return (
-    <div>
+    <div id="sign-in-div">
+      <h1 id="title">Noteherder</h1>
       <button
         className="SignIn"
         onClick={() => authenticate(githubProvider)}

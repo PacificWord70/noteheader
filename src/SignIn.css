@@ -1,9 +1,13 @@
 
+html{
+  background-color: papayawhip;
+}
+
 .SignIn {
-  background-color: #008BF8;
+  background-color: peachpuff;
   border: 0;
   border-radius: 5px;
-  color: white;
+  color: grey;
   display: block;
   margin: 0 auto;
   padding: 20px;
@@ -12,6 +16,13 @@
   transition: background 0.2s;
   font-family: 'helvetica neue', sans-serif;
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 300;
   margin-top: 2.5rem;
+}
+
+#title{
+  margin-bottom: 0rem;
+  color: grey;
+  font-weight: 550;
+  font-size: 50px;
 }
