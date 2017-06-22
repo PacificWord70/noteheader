@@ -40,6 +40,12 @@ input[name="title"] {
   font-weight: 400;
   width: 100%;
 }
+
+input[name="body"] {
+  font-family: "Fauna One";
+  color: white !important;
+}
+
 input[name="title"] {
   outline: none;
 }
